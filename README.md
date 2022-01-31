@@ -1,4 +1,4 @@
-# Unicorn Milk (UNIM)
+# ![Unicorn Milk Icon](https://arweave.net/921yz7yADNj-mKkBGIs2CFWcuBYeT1L4qW1NrFhQ_iY) Unicorn Milk (UNIM)
 [Crypto Unicorns](https://www.cryptounicorns.fun/) is a Digital Pet Collecting and Farming Game built on the blockchain.
 
 In Crypto Unicorns, gameplay centers around awesomely unique Unicorn NFTs which players utilize in a fun farming simulation, as well as other gameplay including Jousting, Racing, and Team RPG.
