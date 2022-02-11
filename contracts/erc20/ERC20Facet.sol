@@ -84,4 +84,26 @@ contract ERC20Facet is ERC20WithCommonStorage {
         LibERC20.enforceIsController();
         _mint(account, amount);
     }
+
+    function batchMint(address[] calldata accounts, uint256[] calldata amounts)
+        external
+    {
+        LibERC20.enforceIsController();
+        require(
+            accounts.length == amounts.length,
+            "ERC20Facet: accounts and amounts must be the same length"
+        );
+        for (uint256 i = 0; i < accounts.length; i++) {
+            _mint(accounts[i], amounts[i]);
+        }
+    }
+
+    function batchMintConstant(address[] calldata accounts, uint256 amount)
+        external
+    {
+        LibERC20.enforceIsController();
+        for (uint256 i = 0; i < accounts.length; i++) {
+            _mint(accounts[i], amount);
+        }
+    }
 }
